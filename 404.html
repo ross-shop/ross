@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirigiendo...</title>
+    <script>
+      // GitHub Pages sirve este archivo para cualquier ruta que no exista.
+      // Guardamos la URL solicitada y recargamos la raiz para que React Router
+      // pueda montarse y luego restaurar la ruta original.
+      sessionStorage.redirect = location.href;
+      location.replace("/ross/");
+    </script>
+  </head>
+  <body></body>
+</html>
